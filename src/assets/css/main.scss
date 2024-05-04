@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    // Set the base font size to 10px (62.5% of 16px)
+    html {
+        font-size: 62.5%;
+    }
+
+    // Define variables
+    :root {
+        --color-primary: #191919;
+        --color-secondary: #FC8249;
+        --color-tertiary: #5B5B5B;
+
+        --color-lightgrey: #FAFAFA;
+
+        --color-white: #FFFFFF;
+        --color-black: #000000;
+    }
+
+    // Setup base typography styles
+    body {
+        font-family: 'Hanken Grotesk', 'sans-serif';
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--color-tertiary);
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Kanit', 'sans-serif';
+        font-weight: 500;
+        color: var(--color-primary);
+    }
+
+    h1,
+    .h1 {
+        font-size: 12.8rem;
+        line-height: 13.8rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 5.2rem;
+        line-height: 6.2rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+}
