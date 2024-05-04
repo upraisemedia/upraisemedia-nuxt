@@ -13,8 +13,8 @@ export default {
             center: true,
             padding: '2rem',
             screens: {
-                xl: '1320px',
-                '2xl': '1320px',
+                xl: '1336px',
+                '2xl': '1336px',
             }
         },
         fontFamily: {
