@@ -18,6 +18,15 @@
 
         --color-white: #FFFFFF;
         --color-black: #000000;
+
+        --font-heading: 'Kanit', 'sans-serif';
+        --font-body: 'Hanken Grotesk', 'sans-serif';
+
+        --font-weight-light: 300;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
     }
 
     // Setup base typography styles
@@ -77,5 +86,9 @@
             font-size: 2.4rem;
             line-height: 3.4rem;
         }
+    }
+
+    strong {
+        font-weight: var(--font-weight-medium);
     }
 }
