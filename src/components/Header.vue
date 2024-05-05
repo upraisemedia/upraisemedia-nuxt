@@ -1,9 +1,11 @@
 <script setup>
+const route = useRoute();
+
 const navigationVisible = ref(false);
 </script>
 
 <template>
-    <header>
+    <header :class="route.name === 'index' && 'invert'">
         <div class="container">
             <div class="flex justify-between items-center">
                 <div class="logo">
@@ -40,10 +42,15 @@ const navigationVisible = ref(false);
 <style lang="scss" scoped>
 header {
     height: 7rem;
-    background-color: var(--color-lightgrey);
+    background-color: transparent;
     display: flex;
     align-items: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 
     @screen xl {
         height: 10.8rem;
