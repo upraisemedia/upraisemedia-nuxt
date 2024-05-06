@@ -17,4 +17,6 @@
     />
 
     <ProjectsHighlight/>
+
+    <ReviewsHighlight/>
 </template>

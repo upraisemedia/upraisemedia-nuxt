@@ -36,7 +36,7 @@
                     subtitle="Website"
                     url="/"
                     image="https://placehold.co/800x800"
-                    variant="3"
+                    variant="2"
                 />
                 <Project
                     class="md:col-span-5"
@@ -52,7 +52,7 @@
                     subtitle="Website"
                     url="/"
                     image="https://placehold.co/800x800"
-                    variant="5"
+                    variant="4"
                 />
             </div>
         </div>

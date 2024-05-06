@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
     <NuxtLink :to="url">
         <div class="image" :class="`variant-${variant}`">
-            <img :src="image" alt="Project" />
+            <img :src="image" alt="Project"/>
         </div>
         <div class="body">
             <div>
@@ -22,7 +22,7 @@ const props = defineProps({
                 <h3>{{ name }}</h3>
             </div>
             <div>
-                <IconsLongarrowRight />
+                <IconsLongarrowRight/>
             </div>
         </div>
     </NuxtLink>
@@ -34,17 +34,21 @@ a {
         img {
             object-fit: cover;
             display: block;
+            width: 100%;
         }
 
         &.variant-1 img {
             aspect-ratio: 21/20;
         }
+
         &.variant-2 img {
             aspect-ratio: 105/74;
         }
+
         &.variant-3 img {
             aspect-ratio: 171/100;
         }
+
         &.variant-4 img {
             aspect-ratio: 7/8;
         }
