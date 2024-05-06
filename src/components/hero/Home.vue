@@ -46,8 +46,8 @@ section {
 
     @screen xl {
         min-height: auto;
-        height: 100vh;
-        max-height: 107rem;
+        height: 200vh;
+        max-height: 100rem;
     }
 
     p {
