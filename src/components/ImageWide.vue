@@ -45,6 +45,7 @@ section {
         right: -5rem;
         z-index: 2;
         display: none;
+        opacity: 0.3;
 
         @screen xl {
             display: block;
