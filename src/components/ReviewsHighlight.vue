@@ -41,9 +41,11 @@ const props = defineProps({});
 section {
     position: relative;
     padding-top: 5rem;
+    padding-bottom: 10rem;
 
     @screen xl {
         padding-top: 14.7rem;
+        padding-bottom: 15rem;
     }
 
     &:before {
@@ -53,9 +55,13 @@ section {
         left: 0;
         right: 0;
         width: 100%;
-        height: 80%;
+        height: 75%;
         background-color: var(--color-primary);
         z-index: 1;
+
+        @screen xl {
+            height: 70%;
+        }
     }
 
     .container {

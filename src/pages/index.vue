@@ -19,4 +19,6 @@
     <ProjectsHighlight/>
 
     <ReviewsHighlight/>
+
+    <BlogHighlight/>
 </template>

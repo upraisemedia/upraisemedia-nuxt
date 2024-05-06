@@ -5,8 +5,8 @@ const props = defineProps({
     url: String,
     image: String,
     variant: {
-        type: Number,
-        default: 1,
+        type: String,
+        default: "1",
     },
 });
 </script>
