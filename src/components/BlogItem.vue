@@ -57,6 +57,11 @@ const props = defineProps({
         display: flex;
         align-items: center;
         gap: 4rem;
+        justify-content: space-between;
+
+        @screen md {
+            justify-content: flex-start;
+        }
 
         .date {
             width: 6.6rem;
