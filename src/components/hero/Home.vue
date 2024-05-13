@@ -1,9 +1,77 @@
 <script setup>
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {SplitText} from 'gsap/SplitText';
 
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+const main = ref(null);
+let ctx;
+
+/**
+ * Initialize animations when component is mounted
+ */
+onMounted(() => {
+    ctx = gsap.context(() => {
+        // Stars 1
+        gsap.to(".stars1", {
+            x: 100,
+            y: 50,
+            rotate: -25,
+            scrollTrigger: {
+                trigger: ".stars1",
+                start: "top center",
+                scrub: true,
+            }
+        });
+
+        // Stars 2 (scale)
+        gsap.to(".stars2", {
+            scale: 1.2,
+            rotate: 10,
+            scrollTrigger: {
+                trigger: ".stars2",
+                start: "top center",
+                scrub: true
+            }
+        });
+
+        // Rectangle
+        gsap.to(".rectangle", {
+            y: 100,
+            scrollTrigger: {
+                trigger: ".rectangle",
+                start: "top center",
+                scrub: true
+            }
+        });
+
+        // Heading span
+        const split = new SplitText("h1 span", {type: "chars"});
+        gsap.from(split.chars, {
+            duration: 0.2,
+            y: 100,
+            opacity: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: "h1",
+                start: "top center",
+            }
+        });
+
+    }, main.value);
+});
+
+/**
+ * Revert all animations when component is unmounted
+ */
+onUnmounted(() => {
+    ctx.revert();
+});
 </script>
 
 <template>
-    <section>
+    <section ref="main" class="hero">
         <div class="container">
             <div class="grid md:grid-cols-12">
                 <div class="md:col-span-10">
@@ -39,6 +107,7 @@ section {
     display: flex;
     align-items: center;
     min-height: 70vh;
+    overflow: hidden;
 
     @screen lg {
         min-height: 85vh;
@@ -101,6 +170,7 @@ section {
         &.stars1 {
             left: -10%;
             top: 8%;
+            transition: all .3s;
 
             @screen md {
                 left: 5%;
@@ -113,6 +183,7 @@ section {
             bottom: -10%;
             width: 24rem;
             height: 24rem;
+            transition: all .3s;
 
             @screen md {
                 right: 10%;
@@ -134,6 +205,7 @@ section {
             right: 15%;
             top: 12%;
             transform: rotate(45deg);
+            transition: all .3s;
 
             @screen xl {
                 width: 14rem;
@@ -153,6 +225,7 @@ section {
             margin: auto 0;
             border-radius: 15rem;
             display: none;
+            transition: all .3s;
 
             @screen xl {
                 display: block;

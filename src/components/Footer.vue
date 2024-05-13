@@ -53,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="xl:col-span-2">
-                    <h4>Volg je ons al?</h4>
+                    <h4>Socials</h4>
                     <ul>
                         <li>
                             <NuxtLink to="/">Facebook</NuxtLink>

@@ -1,4 +1,7 @@
 <script setup>
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
 const props = defineProps({
     name: String,
     subtitle: String,
@@ -9,12 +12,43 @@ const props = defineProps({
         default: "1",
     },
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+const imageRef = ref(null);
+let ctx;
+
+/**
+ * Initialize animations when component is mounted
+ */
+onMounted(() => {
+    ctx = gsap.context(() => {
+        gsap.fromTo(imageRef.value, {
+            y: 0,
+        }, {
+            y: 30,
+            scrollTrigger: {
+                trigger: imageRef.value,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.5,
+            },
+        });
+    });
+});
+
+/**
+ * Revert all animations when component is unmounted
+ */
+onUnmounted(() => {
+    ctx.revert();
+});
 </script>
 
 <template>
-    <NuxtLink :to="url">
+    <NuxtLink :to="url" ref="main">
         <div class="image" :class="`variant-${variant}`">
-            <img :src="image" alt="Project"/>
+            <img ref="imageRef" :src="image" alt="Project"/>
         </div>
         <div class="body">
             <div>
@@ -31,10 +65,15 @@ const props = defineProps({
 <style lang="scss" scoped>
 a {
     .image {
+        overflow: hidden;
+
         img {
             object-fit: cover;
+            object-position: center center;
             display: block;
             width: 100%;
+            transition: all .3s;
+            transform: scale(1.2);
         }
 
         &.variant-1 img {
