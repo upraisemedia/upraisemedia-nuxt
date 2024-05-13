@@ -136,6 +136,14 @@ header {
                 @screen lg {
                     font-size: 1.6rem;
                 }
+
+                a {
+                    @media (hover:hover) {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
         }
     }
@@ -170,6 +178,7 @@ header {
     &.scrolled {
         background-color: var(--color-white);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 7rem;
     }
 }
 </style>

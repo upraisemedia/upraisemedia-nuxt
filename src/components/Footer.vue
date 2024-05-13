@@ -1,14 +1,17 @@
 <script setup>
+const inverted = ref(false);
 </script>
 
 <template>
-    <footer>
+    <footer :class="inverted && 'invert'">
         <div class="container">
 
             <!-- Top -->
             <button
                 class="footer-top"
                 @click="() => console.log('hiero')"
+                @mouseenter="inverted = true"
+                @mouseleave="inverted = false"
             >
                 <span>Let's Start <br/>Your Project</span>
                 <IconsLongarrowRightWhite/>
@@ -74,7 +77,7 @@
             </div>
 
             <!-- Outline -->
-            <div class="text-center outline-text">
+            <div class="text-center outline-text" :class="inverted && 'opacity-change'">
                 Upraise Media
             </div>
 
@@ -89,6 +92,7 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     position: relative;
     overflow: hidden;
+    transition: all .2s;
 
     @screen md {
         padding: 10rem 0;
@@ -121,6 +125,8 @@ footer {
             font-size: 5rem;
             line-height: 5.5rem;
             display: block;
+            text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+            transition: text-decoration-color 300ms;
 
             @screen md {
                 font-size: 8rem;
@@ -134,6 +140,14 @@ footer {
             @screen xl {
                 font-size: 12.8rem;
                 line-height: 13.8rem;
+            }
+        }
+
+        @media (hover:hover) {
+            &:hover {
+                span {
+                    text-decoration-color: rgba(255, 255, 255, 1);
+                }
             }
         }
     }
@@ -186,6 +200,11 @@ footer {
         text-transform: uppercase;
         white-space: nowrap;
         pointer-events: none;
+        transition: all .3s;
+
+        &.opacity-change {
+            opacity: 0.1;
+        }
 
         @screen xl {
             font-size: 28rem;

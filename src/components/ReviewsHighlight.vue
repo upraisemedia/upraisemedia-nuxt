@@ -1,8 +1,9 @@
 <script setup>
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {SplitText} from 'gsap/SplitText';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const main = ref();
 let ctx;
@@ -26,6 +27,18 @@ onMounted(() => {
                     start: '30% bottom',
                 },
             });
+        });
+
+        const split = new SplitText("h2", {type: "words"});
+        gsap.from(split.words, {
+            duration: 0.2,
+            y: 30,
+            opacity: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: "h2",
+                start: "bottom 90%",
+            }
         });
     }, main.value);
 });
