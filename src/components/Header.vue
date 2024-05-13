@@ -2,6 +2,26 @@
 const route = useRoute();
 
 const navigationVisible = ref(false);
+
+/**
+ * Toggle the navigation visibility
+ */
+function checkScroll() {
+    if (window.scrollY > 100) {
+        document.querySelector('header').classList.remove('invert');
+        document.querySelector('header').classList.add('scrolled');
+    } else {
+        document.querySelector('header').classList.add('invert');
+        document.querySelector('header').classList.remove('scrolled');
+    }
+}
+
+/**
+ * On component mount
+ */
+onMounted(() => {
+    window.addEventListener('scroll', checkScroll);
+});
 </script>
 
 <template>
@@ -10,16 +30,26 @@ const navigationVisible = ref(false);
             <div class="flex justify-between items-center">
                 <div class="logo">
                     <NuxtLink to="/">
-                        <img src="~/assets/img/logo.svg" alt="Logo Upraise Media" />
+                        <img src="~/assets/img/logo.svg" alt="Logo Upraise Media"/>
                     </NuxtLink>
                 </div>
                 <nav :class="navigationVisible && 'is-active'" class="navigation">
                     <ul>
-                        <li><NuxtLink to="/">Home</NuxtLink></li>
-                        <li><NuxtLink to="/">Over ons</NuxtLink></li>
-                        <li><NuxtLink to="/">Ons werk</NuxtLink></li>
-                        <li><NuxtLink to="/">Diensten</NuxtLink></li>
-                        <li><NuxtLink to="/">Contact</NuxtLink></li>
+                        <li>
+                            <NuxtLink to="/">Home</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/">Over ons</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/">Ons werk</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/">Diensten</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/">Contact</NuxtLink>
+                        </li>
                     </ul>
                 </nav>
                 <div class="mailto">
@@ -51,6 +81,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    transition: all .2s;
 
     @screen xl {
         height: 10.8rem;
@@ -134,6 +165,11 @@ header {
         @screen lg {
             display: none;
         }
+    }
+
+    &.scrolled {
+        background-color: var(--color-white);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
 </style>

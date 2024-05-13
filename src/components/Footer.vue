@@ -191,5 +191,13 @@ footer {
             font-size: 28rem;
         }
     }
+
+    a {
+        @media (hover:hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 </style>

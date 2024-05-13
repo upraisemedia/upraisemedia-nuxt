@@ -2,8 +2,10 @@
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {SplitText} from 'gsap/SplitText';
+import {Draggable} from "gsap/Draggable";
+import {InertiaPlugin} from "gsap/InertiaPlugin";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, Draggable, InertiaPlugin);
 
 const main = ref(null);
 let ctx;
@@ -21,7 +23,7 @@ onMounted(() => {
             scrollTrigger: {
                 trigger: ".stars1",
                 start: "top center",
-                scrub: true,
+                scrub: 0.5,
             }
         });
 
@@ -32,7 +34,7 @@ onMounted(() => {
             scrollTrigger: {
                 trigger: ".stars2",
                 start: "top center",
-                scrub: true
+                scrub: 0.5
             }
         });
 
@@ -42,7 +44,7 @@ onMounted(() => {
             scrollTrigger: {
                 trigger: ".rectangle",
                 start: "top center",
-                scrub: true
+                scrub: 0.5
             }
         });
 
@@ -57,6 +59,13 @@ onMounted(() => {
                 trigger: "h1",
                 start: "top center",
             }
+        });
+
+        // Make the square draggable
+        Draggable.create(".square", {
+            bounds: main.value,
+            type: "x,y",
+
         });
 
     }, main.value);
@@ -159,7 +168,7 @@ section {
     // Floating elements
     .floating-element {
         position: absolute;
-        pointer-events: none;
+        //pointer-events: none;
         z-index: 1;
 
         svg {

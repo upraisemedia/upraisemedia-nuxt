@@ -14,13 +14,13 @@ let ctx;
 onMounted(() => {
     ctx = gsap.context(() => {
         gsap.from('.draw-me', {
-            duration: 2,
+            duration: 5,
             stagger: 0.1,
             drawSVG: 0,
             scrollTrigger: {
                 trigger: svgRef.value,
                 start: 'bottom bottom',
-                end: 'top 70%',
+                end: 'bottom center',
                 scrub: 1,
             }
         });

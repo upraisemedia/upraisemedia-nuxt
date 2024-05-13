@@ -34,11 +34,13 @@ const props = defineProps({
 .item {
     .image {
         margin-bottom: 2.4rem;
+        overflow: hidden;
 
         img {
             width: 100%;
             object-fit: cover;
             aspect-ratio: 21/19;
+            transition: transform 0.2s ease-in-out;
         }
     }
 
@@ -75,11 +77,55 @@ const props = defineProps({
             font-family: var(--font-heading);
             font-weight: var(--font-weight-medium);
             line-height: 1;
+            position: relative;
+            transition: color .3s;
+
+            &:before {
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: var(--color-primary);
+                z-index: 1;
+                transition: all .3s;
+            }
+
+            span {
+                position: relative;
+                z-index: 2;
+            }
         }
 
         svg {
             width: 7rem;
             height: 2.4rem;
+        }
+    }
+
+    @media (hover:hover) {
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+
+            .footer {
+                .date {
+                    color: var(--color-white);
+
+                    &:before {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 }

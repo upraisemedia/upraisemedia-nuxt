@@ -1,9 +1,45 @@
 <script setup>
-const props = defineProps({});
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const main = ref();
+let ctx;
+
+/**
+ * Initialize animations when component is mounted
+ */
+onMounted(() => {
+    ctx = gsap.context((self) => {
+        const reviews = self.selector('.review');
+        reviews.forEach((review, index) => {
+            gsap.fromTo(review, {
+                y: 30,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                delay: 0.1 * index,
+                scrollTrigger: {
+                    trigger: review,
+                    start: '30% bottom',
+                },
+            });
+        });
+    }, main.value);
+});
+
+/**
+ * Revert all animations when component is unmounted
+ */
+onUnmounted(() => {
+    ctx.revert();
+});
 </script>
 
 <template>
-    <section>
+    <section ref="main">
         <div class="container">
             <div class="grid items-center text-center lg:grid-cols-12">
                 <div class="top lg:col-span-6 lg:col-start-4">
@@ -17,14 +53,14 @@ const props = defineProps({});
             </div>
             <div class="grid md:grid-cols-2 gap-10">
                 <Review
-                    review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus sit amet nisl tincidunt
-                    tincidunt. Nulla facilisi. Nullam nec eros nec urna tincidunt aliquam. Sed nec metus sit amet
-                    massa."
+                    class="review"
+                    review="De samenwerking met Upraise Media voor onze Gifty website was een uitstekende ervaring. Jochem combineert technische expertise met creatieve oplossingen, wat resulteerde in een snelle en functionele website. Voor vragen en aanpassingen is hij goed bereikbaar en voert deze snel door. Bedankt Jochem!"
                     name="Sjon Sluys"
                     company="Gifty"
                     image="https://placehold.co/70x70"
                 />
                 <Review
+                    class="review"
                     review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus sit amet nisl tincidunt
                     tincidunt. Nulla facilisi. Nullam nec eros nec urna tincidunt aliquam. Sed nec metus sit amet
                     massa."
