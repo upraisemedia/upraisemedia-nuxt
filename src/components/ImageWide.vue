@@ -32,6 +32,9 @@ section {
         max-width: 162rem;
         position: relative;
         z-index: 3;
+        aspect-ratio: 81/35;
+        object-fit: cover;
+        object-position: center;
     }
 
     .wrapper {

@@ -19,7 +19,7 @@
                     name="Gifty"
                     subtitle="Website"
                     url="/"
-                    image="https://placehold.co/800x800"
+                    image="https://images.pexels.com/photos/23096924/pexels-photo-23096924/free-photo-of-a-balcony-with-pots-of-plants-and-a-statue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     variant="1"
                 />
                 <Project
@@ -27,7 +27,7 @@
                     name="Gifty"
                     subtitle="Website"
                     url="/"
-                    image="https://placehold.co/800x800"
+                    image="https://images.pexels.com/photos/23322602/pexels-photo-23322602/free-photo-of-an-aerial-view-of-a-beach-and-a-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     variant="2"
                 />
                 <Project
@@ -35,7 +35,7 @@
                     name="Gifty"
                     subtitle="Website"
                     url="/"
-                    image="https://placehold.co/800x800"
+                    image="https://images.pexels.com/photos/23383929/pexels-photo-23383929/free-photo-of-a-man-walking-down-a-street-with-a-red-tram.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     variant="2"
                 />
                 <Project
@@ -43,7 +43,7 @@
                     name="Gifty"
                     subtitle="Website"
                     url="/"
-                    image="https://placehold.co/800x800"
+                    image="https://images.pexels.com/photos/20265011/pexels-photo-20265011/free-photo-of-a-woman-sitting-on-top-of-a-pile-of-rubble-with-a-construction-site-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     variant="2"
                 />
                 <Project
@@ -51,7 +51,7 @@
                     name="Gifty"
                     subtitle="Website"
                     url="/"
-                    image="https://placehold.co/800x800"
+                    image="https://images.pexels.com/photos/20195753/pexels-photo-20195753/free-photo-of-new-york-city-at-night-from-the-top-of-the-empire-state-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     variant="4"
                 />
             </div>

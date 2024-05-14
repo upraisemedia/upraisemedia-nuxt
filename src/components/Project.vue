@@ -26,7 +26,7 @@ onMounted(() => {
         gsap.fromTo(imageRef.value, {
             y: 0,
         }, {
-            y: 30,
+            y: -50,
             scrollTrigger: {
                 trigger: imageRef.value,
                 start: 'top bottom',
@@ -66,6 +66,7 @@ onUnmounted(() => {
 a {
     .image {
         overflow: hidden;
+        transition: transform .3s;
 
         img {
             object-fit: cover;
@@ -112,6 +113,14 @@ a {
         svg {
             width: 7rem;
             height: 2.4rem;
+        }
+    }
+
+    @media (hover:hover) {
+        &:hover {
+            .image {
+                transform: scale(1.03);
+            }
         }
     }
 }
