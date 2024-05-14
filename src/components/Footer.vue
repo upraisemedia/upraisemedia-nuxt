@@ -19,7 +19,7 @@ const inverted = ref(false);
 
             <!-- Middle -->
             <div class="footer-middle grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-12 gap-12">
-                <div class="md:col-span-3 lg:col-span-1 xl:col-span-5">
+                <div class="col-span-3 lg:col-span-1 xl:col-span-5">
                     <NuxtLink to="/" class="logo">
                         <img src="~/assets/img/logo-white.svg" alt="Logo"/>
                     </NuxtLink>
