@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     css: ['~/assets/css/main.scss'],
     modules: [
         '@nuxtjs/google-fonts',
-        'nuxt-icon'
+        'nuxt-icon',
+        '@nuxt/image',
     ],
     googleFonts: {
         families: {

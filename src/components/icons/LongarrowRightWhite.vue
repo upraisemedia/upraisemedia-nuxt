@@ -2,16 +2,14 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {DrawSVGPlugin} from 'gsap/DrawSVGPlugin';
+const route = useRoute();
 
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 const svgRef = ref(null);
 let ctx;
 
-/**
- * Initialize animations when component is mounted
- */
-onMounted(() => {
+function animate() {
     ctx = gsap.context(() => {
         gsap.from('.draw-me', {
             duration: 5,
@@ -25,6 +23,19 @@ onMounted(() => {
             }
         });
     }, svgRef.value);
+}
+
+// Watch the route and revert animations when route changes
+watch(() => route.fullPath, () => {
+    ctx.revert();
+    animate();
+});
+
+/**
+ * Initialize animations when component is mounted
+ */
+onMounted(() => {
+    animate();
 });
 
 /**

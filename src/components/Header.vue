@@ -2,19 +2,29 @@
 const route = useRoute();
 
 const navigationVisible = ref(false);
+const headerInverted = ref(false);
 
 /**
  * Toggle the navigation visibility
  */
 function checkScroll() {
     if (window.scrollY > 100) {
-        document.querySelector('header').classList.remove('invert');
+        if (route.name === 'index') {
+            document.querySelector('header').classList.remove('invert');
+        }
         document.querySelector('header').classList.add('scrolled');
     } else {
-        document.querySelector('header').classList.add('invert');
+        if (route.name === 'index') {
+            document.querySelector('header').classList.add('invert');
+        }
         document.querySelector('header').classList.remove('scrolled');
     }
 }
+
+// Watch the route.name, if it changes we change the ref
+watch(() => route.name, (name) => {
+    headerInverted.value = name === 'index';
+});
 
 /**
  * On component mount
@@ -39,16 +49,16 @@ onMounted(() => {
                             <NuxtLink to="/">Home</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Over ons</NuxtLink>
+                            <NuxtLink to="/over-ons">Over ons</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Ons werk</NuxtLink>
+                            <NuxtLink to="/ons-werk">Ons werk</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Diensten</NuxtLink>
+                            <NuxtLink to="/diensten">Diensten</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Contact</NuxtLink>
+                            <NuxtLink to="/contact">Contact</NuxtLink>
                         </li>
                     </ul>
                 </nav>
@@ -88,8 +98,16 @@ header {
     }
 
     .logo {
+        transition: all .3s;
+
         img {
             height: 3rem;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                transform: scale(1.02);
+            }
         }
     }
 
@@ -138,7 +156,7 @@ header {
                 }
 
                 a {
-                    @media (hover:hover) {
+                    @media (hover: hover) {
                         &:hover {
                             text-decoration: underline;
                         }

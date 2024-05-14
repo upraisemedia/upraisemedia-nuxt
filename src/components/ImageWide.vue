@@ -1,15 +1,19 @@
 <script setup>
 const props = defineProps({
     image: String,
-    belowHero: Boolean
+    belowHero: Boolean,
+    hidePattern: {
+        type: Boolean,
+        default: false
+    }
 });
 </script>
 
 <template>
-    <section :class="belowHero && 'below-hero'">
+    <section :class="[belowHero && 'below-hero', hidePattern && 'hide-pattern']">
         <div class="wrapper">
             <img :src="image" alt="">
-            <div class="pattern">
+            <div v-if="!hidePattern" class="pattern">
                 <IconsPatternCircles/>
             </div>
         </div>
@@ -61,6 +65,10 @@ section {
         @screen xl {
             margin-top: -24rem;
         }
+    }
+
+    &.hide-pattern {
+        padding-top: 0;
     }
 }
 </style>
