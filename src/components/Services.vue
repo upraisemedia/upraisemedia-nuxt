@@ -53,10 +53,10 @@ onUnmounted(() => {
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Websites op maat</NuxtLink>
+                                <NuxtLink to="/diensten/website-op-maat">Websites op maat</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/">Websites met CMS</NuxtLink>
+                                <NuxtLink to="/diensten/website-met-cms">Websites met CMS</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -67,16 +67,13 @@ onUnmounted(() => {
                         <IconsBox/>
                     </div>
                     <div class="body">
-                        <h4>Online marketing</h4>
+                        <h4>Webshops</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Websites op maat</NuxtLink>
-                            </li>
-                            <li>
-                                <NuxtLink to="/">Websites met CMS</NuxtLink>
+                                <NuxtLink to="/diensten/webshop-op-maat">Webshop op maat</NuxtLink>
                             </li>
                         </ul>
                     </div>
