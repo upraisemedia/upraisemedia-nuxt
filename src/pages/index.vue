@@ -22,5 +22,5 @@
 
     <ReviewsHighlight/>
 
-    <AboutInline class="!pt-0" />
+    <CallToAction class="!pt-0" />
 </template>

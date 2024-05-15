@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
     <div class="review">
-        <div class="image">
+        <div v-if="image" class="image">
             <img :src="image" :alt="`${name} | ${company}`">
         </div>
         <div class="body">
@@ -36,6 +36,7 @@ const props = defineProps({
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     @screen lg {
         padding: 3.2rem;

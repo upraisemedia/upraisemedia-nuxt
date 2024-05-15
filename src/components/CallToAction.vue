@@ -5,16 +5,14 @@
     <section>
             <IconsSquares/>
         <div class="container">
-            <div class="grid md:grid-cols-2 md:items-center gap-16">
-
-                <div>
-                    <img src="~/assets/img/u.svg" alt="Upraise Media"/>
+            <div class="grid grid-cols-1 md:grid-cols-12 md:items-center gap-16">
+                <div class="flex justify-center md:col-span-4 lg:col-start-2">
+                    <img src="/images/jochem.webp" alt="Jochem van Krieken | Upraise Media"/>
                 </div>
-                <div>
-                    <h2>Partner voor digitale oplossingen</h2>
-                    <h3>Let's get in touch</h3>
-                    <p class="pb-8">
-                        Wij zijn een digital agency met focus op het ontwikkelen van digitale oplossingen die jouw bedrijf naar een hoger niveau tillen. Wij helpen je met het ontwikkelen van een website, webshop of webapplicatie die aansluit bij jouw wensen en doelen. Wij zijn jouw partner voor digitale oplossingen.
+                <div class="md:col-span-8 lg:col-span-6">
+                    <h2>Weten wat wij voor jou kunnen betekenen?</h2>
+                    <p class="mb-8">
+                        Jochem helpt je graag verder met jouw online succes! <br class="hidden xl:block"/>Neem contact met ons op voor een vrijblijvend gesprek.
                     </p>
                     <UiButton to="/contact" text="Neem contact op"/>
                 </div>
@@ -44,6 +42,12 @@ section {
 
     h3 {
         margin-bottom: 2.4rem;
+    }
+
+    img {
+        border-radius: 50%;
+        max-width: 29.5rem;
+        width: 100%;
     }
 
     svg {

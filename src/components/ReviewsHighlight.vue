@@ -59,8 +59,8 @@ onUnmounted(() => {
                     <IconsStarsOutlined/>
                     <h2 class="h3">Wat klanten zeggen over Upraise Media</h2>
                     <p>
-                        Maecenas consequat leo imperdiet libero tincidunt vehicula. Vivamus mattis elit vitae varius
-                        ultrices. Aenean posuere erat faucibu
+                        Wij zijn trots op de samenwerkingen met onze klanten<br class="hidden xl:block"/>
+                        en de mooie resultaten die wij hebben behaald.
                     </p>
                 </div>
             </div>
@@ -70,16 +70,12 @@ onUnmounted(() => {
                     review="De samenwerking met Upraise Media voor onze Gifty website was een uitstekende ervaring. Jochem combineert technische expertise met creatieve oplossingen, wat resulteerde in een snelle en functionele website. Voor vragen en aanpassingen is hij goed bereikbaar en voert deze snel door. Bedankt Jochem!"
                     name="Sjon Sluys"
                     company="Gifty"
-                    image="https://placehold.co/70x70"
                 />
                 <Review
                     class="review"
-                    review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus sit amet nisl tincidunt
-                    tincidunt. Nulla facilisi. Nullam nec eros nec urna tincidunt aliquam. Sed nec metus sit amet
-                    massa."
-                    name="Sjon Sluys"
-                    company="Gifty"
-                    image="https://placehold.co/70x70"
+                    review="Upraise Media heeft voor mij, niet 1, maar 2 prachtige websites gemaakt dit jaar! Jochem heeft geholpen met het ontwerpen, na aanlevering van mijn ideeën en zet deze geheel naar wens in elkaar. Jochem altijd een snelle levertijd, voor zowel de website, als aanpassingen die we willen doorvoeren. Geen vraag is teveel! Ik ben onwijs tevreden over Upraise Media en beveel hun zeker aan!!"
+                    name="Alisha van den Berg"
+                    company="Be-Pretty & BePrettyModels"
                 />
             </div>
         </div>

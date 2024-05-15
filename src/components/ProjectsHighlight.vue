@@ -7,7 +7,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end mb-24">
                 <div class="md:col-span-4 text-right">
                     <IconsStarsOutlined class="ml-auto w-28 h-28"/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare sit amet enim id pellentesque.
+                    Wij zijn trots op de projecten die wij hebben mogen realiseren voor onze klanten.
                 </div>
                 <div class="md:col-span-6 md:col-start-7">
                     <h2>Een greep uit ons werk waar wij trots op zijn</h2>
@@ -16,7 +16,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-y-48">
                 <Project
                     class="md:col-span-5"
-                    name="Be Pretty Models Agency"
+                    name="Be-Pretty Models Agency"
                     subtitle="Ontwerp & realisatie website"
                     url="https://beprettymodels.nl"
                     image="images/projects/be-pretty-models-agency.webp"

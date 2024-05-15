@@ -49,7 +49,7 @@ onUnmounted(() => {
                     <div class="body">
                         <h4>Websites</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                            Jouw visitekaartje op het internet. Een website is een must voor iedere ondernemer.
                         </p>
                         <ul>
                             <li>
@@ -69,7 +69,7 @@ onUnmounted(() => {
                     <div class="body">
                         <h4>Webshops</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                            Verkoop jouw producten online met een professionele webshop. Wij helpen je graag verder.
                         </p>
                         <ul>
                             <li>
@@ -86,14 +86,11 @@ onUnmounted(() => {
                     <div class="body">
                         <h4>SEO</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                            Zorg dat jouw website goed gevonden wordt in zoekmachines zoals Google.
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Websites op maat</NuxtLink>
-                            </li>
-                            <li>
-                                <NuxtLink to="/">Websites met CMS</NuxtLink>
+                                <NuxtLink to="/">Zoekmachineoptimalisatie</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -106,14 +103,11 @@ onUnmounted(() => {
                     <div class="body">
                         <h4>Maatwerk</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                            Heb je specifieke wensen? Wij maken graag een website of applicatie op maat voor je.
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Websites op maat</NuxtLink>
-                            </li>
-                            <li>
-                                <NuxtLink to="/">Websites met CMS</NuxtLink>
+                                <NuxtLink to="/">Applicatie op maat</NuxtLink>
                             </li>
                         </ul>
                     </div>

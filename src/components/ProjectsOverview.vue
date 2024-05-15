@@ -42,6 +42,30 @@
                     image="images/projects/tekenbureau-piso.webp"
                     variant="4"
                 />
+
+                <Project
+                    class="md:col-span-5"
+                    name="Be-Pretty"
+                    subtitle="Ontwerp & realisatie website"
+                    url="https://be-pretty.nl"
+                    image="images/projects/be-pretty.webp"
+                    variant="1"
+                />
+
+                <div class="md:col-span-5 md:col-start-8 self-center">
+                    <h3 class="mb-4">
+                        Geïnteresseerd in een samenwerking?
+                    </h3>
+                    <p class="mb-8">
+                        Neem contact met ons op voor een vrijblijvend gesprek.
+                    </p>
+                    <p>
+                        <UiButton
+                            text="Neem contact op"
+                            to="/contact"
+                        />
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -62,3 +86,5 @@ section {
     }
 }
 </style>
+<script setup lang="ts">
+</script>

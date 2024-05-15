@@ -195,6 +195,9 @@ onMounted(() => {
 
 <template>
     <section>
+        <div class="container mb-12">
+            Een (digitaal) kopje koffie drinken of gewoon even babbelen? <br/> Neem contact met ons op!
+        </div>
         <div class="arrow">
             <IconsLongarrowDown/>
         </div>
@@ -203,21 +206,21 @@ onMounted(() => {
                 <div class="details">
                     <h3>Telefoon</h3>
                     <p>
-                        Lorem ipsum dolor sit amet.
+                        We staan je graag te woord.
                     </p>
                     <NuxtLink to="tel:+31631950195">+31631950195</NuxtLink>
                 </div>
                 <div class="details">
                     <h3>E-mail</h3>
                     <p>
-                        Lorem ipsum dolor sit amet.
+                        Stuur ons een e-mail.
                     </p>
                     <NuxtLink to="mailto:info@upraisemedia.nl">info@upraisemedia.nl</NuxtLink>
                 </div>
                 <div class="details">
                     <h3>Adres</h3>
                     <p>
-                        Lorem ipsum dolor sit amet.
+                        Kom langs voor een kopje koffie.
                     </p>
                     <NuxtLink to="https://maps.app.goo.gl/6iS4yt9DoJcUaXPE6" target="_blank">
                         Walnootgaarde 38<br/>

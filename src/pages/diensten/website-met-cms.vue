@@ -8,7 +8,7 @@
                 </NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/">
+                <NuxtLink to="/diensten">
                     Diensten
                 </NuxtLink>
             </li>

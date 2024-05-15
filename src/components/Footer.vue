@@ -9,7 +9,7 @@ const inverted = ref(false);
             <!-- Top -->
             <button
                 class="footer-top"
-                @click="() => console.log('hiero')"
+                @click="() => navigateTo('/contact')"
                 @mouseenter="inverted = true"
                 @mouseleave="inverted = false"
             >
@@ -25,11 +25,13 @@ const inverted = ref(false);
                     </NuxtLink>
                 </div>
                 <div class="col-span-2 md:col-span-1 xl:col-span-3">
-                    <h4>Address</h4>
+                    <h4>Adres</h4>
                     <p>
-                        Walnootgaarde 38<br/>
-                        3436 JC Nieuwegein<br/>
-                        Nederland<br/><br/>
+                        <NuxtLink to="https://maps.app.goo.gl/6iS4yt9DoJcUaXPE6" target="_blank">
+                            Walnootgaarde 38<br/>
+                            3436 JC Nieuwegein<br/>
+                            Nederland<br/><br/>
+                        </NuxtLink>
                         <NuxtLink to="mailto:info@upraisemedia.nl">info@upraisemedia.nl</NuxtLink>
                         <br/>
                         <NuxtLink to="tel:0631950195">0631950195</NuxtLink>
@@ -42,16 +44,16 @@ const inverted = ref(false);
                             <NuxtLink to="/">Home</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Over ons</NuxtLink>
+                            <NuxtLink to="/over-ons">Over ons</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Ons werk</NuxtLink>
+                            <NuxtLink to="/ons-werk">Ons werk</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Diensten</NuxtLink>
+                            <NuxtLink to="/diensten">Diensten</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Contact</NuxtLink>
+                            <NuxtLink to="/contact">Contact</NuxtLink>
                         </li>
                     </ul>
                 </div>
@@ -59,13 +61,13 @@ const inverted = ref(false);
                     <h4>Socials</h4>
                     <ul>
                         <li>
-                            <NuxtLink to="/">Facebook</NuxtLink>
+                            <NuxtLink to="https://www.facebook.com/upraisemedianl/" target="_blank">Facebook</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">Instagram</NuxtLink>
+                            <NuxtLink to="https://www.instagram.com/upraisemedia_nl/" target="_blank">Instagram</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/">LinkedIn</NuxtLink>
+                            <NuxtLink to="https://www.linkedin.com/company/76175201" target="_blank">LinkedIn</NuxtLink>
                         </li>
                     </ul>
                 </div>
