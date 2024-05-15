@@ -3,6 +3,33 @@ const route = useRoute();
 
 const navigationVisible = ref(false);
 const headerInverted = ref(false);
+const navigationItems = [
+    {
+        name: 'Home',
+        path: '/',
+        key: 'index'
+    },
+    {
+        name: 'Over ons',
+        path: '/over-ons',
+        key: 'over-ons'
+    },
+    {
+        name: 'Ons werk',
+        path: '/ons-werk',
+        key: 'ons-werk'
+    },
+    {
+        name: 'Diensten',
+        path: '/diensten',
+        key: 'diensten'
+    },
+    {
+        name: 'Contact',
+        path: '/contact',
+        key: 'contact'
+    }
+];
 
 /**
  * Toggle the navigation visibility
@@ -45,20 +72,13 @@ onMounted(() => {
                 </div>
                 <nav :class="navigationVisible && 'is-active'" class="navigation">
                     <ul>
-                        <li>
-                            <NuxtLink to="/">Home</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/over-ons">Over ons</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/ons-werk">Ons werk</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/diensten">Diensten</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/contact">Contact</NuxtLink>
+                        <li v-for="item in navigationItems" :key="item.name">
+                            <NuxtLink
+                                :to="item.path"
+                                :class="route.name.includes(item.key) && 'active'"
+                            >
+                                {{ item.name }}
+                            </NuxtLink>
                         </li>
                     </ul>
                 </nav>
@@ -156,6 +176,10 @@ header {
                 }
 
                 a {
+                    &.active {
+                        text-decoration: underline;
+                    }
+
                     @media (hover: hover) {
                         &:hover {
                             text-decoration: underline;

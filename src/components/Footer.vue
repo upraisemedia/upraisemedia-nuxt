@@ -34,7 +34,7 @@ const inverted = ref(false);
                         </NuxtLink>
                         <NuxtLink to="mailto:info@upraisemedia.nl">info@upraisemedia.nl</NuxtLink>
                         <br/>
-                        <NuxtLink to="tel:0631950195">0631950195</NuxtLink>
+                        <NuxtLink to="tel:+31853038964">085 303 8964</NuxtLink>
                     </p>
                 </div>
                 <div class="xl:col-span-2">

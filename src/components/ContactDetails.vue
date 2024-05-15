@@ -208,7 +208,7 @@ onMounted(() => {
                     <p>
                         We staan je graag te woord.
                     </p>
-                    <NuxtLink to="tel:+31631950195">+31631950195</NuxtLink>
+                    <NuxtLink to="tel:+31853038964">085 303 8964</NuxtLink>
                 </div>
                 <div class="details">
                     <h3>E-mail</h3>

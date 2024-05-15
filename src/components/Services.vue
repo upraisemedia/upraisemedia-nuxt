@@ -90,7 +90,7 @@ onUnmounted(() => {
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Zoekmachineoptimalisatie</NuxtLink>
+                                <NuxtLink to="/diensten/zoekmachineoptimalisatie">Zoekmachineoptimalisatie</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -107,7 +107,7 @@ onUnmounted(() => {
                         </p>
                         <ul>
                             <li>
-                                <NuxtLink to="/">Applicatie op maat</NuxtLink>
+                                <NuxtLink to="/diensten/applicatie-op-maat">Applicatie op maat</NuxtLink>
                             </li>
                         </ul>
                     </div>
