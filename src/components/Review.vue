@@ -75,7 +75,7 @@ const props = defineProps({
         }
 
         @screen xl {
-            padding: 0 4.4rem;
+            padding: 0 4rem;
         }
 
         svg {
