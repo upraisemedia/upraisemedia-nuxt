@@ -1,6 +1,10 @@
 <script setup>
 const props = defineProps({
     image: String,
+    alt: {
+        type: String,
+        default: ''
+    },
     belowHero: Boolean,
     hidePattern: {
         type: Boolean,
@@ -12,7 +16,7 @@ const props = defineProps({
 <template>
     <section :class="[belowHero && 'below-hero', hidePattern && 'hide-pattern']">
         <div class="wrapper">
-            <img :src="image" alt="">
+            <img :src="image" :alt="alt">
             <div v-if="!hidePattern" class="pattern">
                 <IconsPatternCircles/>
             </div>

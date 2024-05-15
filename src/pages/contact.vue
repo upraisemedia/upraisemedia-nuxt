@@ -14,8 +14,8 @@
         <h1>Contact</h1>
     </HeroDefault>
 
-    <Logos/>
-
     <ContactDetails/>
+
+    <Logos class="!pt-0"/>
 
 </template>

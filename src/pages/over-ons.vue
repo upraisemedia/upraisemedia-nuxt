@@ -14,12 +14,17 @@
         <h1>Over ons</h1>
     </HeroDefault>
 
-    <Logos/>
+    <Content>
+        <div class="grid lg:grid-cols-12">
+            <div class="lg:col-span-8">
+                <h2 class="!mb-0">Upraise Media</h2>
+                <h3>Partner voor digitale oplossingen</h3>
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
+        </div>
+    </Content>
 
-    <ImageWide
-        image="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        hide-pattern
-    />
-
-    <AboutInline/>
+    <Logos class="!pt-0"/>
 </template>

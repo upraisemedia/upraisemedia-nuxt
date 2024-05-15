@@ -2,7 +2,8 @@
     <HeroHome/>
 
     <ImageWide
-        image="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="images/business.webp"
+        alt="Upraise Media Creative Digital Agency"
         below-hero
     />
 
@@ -13,12 +14,13 @@
     <AboutInline class="xl:!pb-8" />
 
     <ImageWide
-        image="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="images/wireframes.webp"
+        alt="Upraise Media Web Development"
     />
 
     <ProjectsHighlight/>
 
     <ReviewsHighlight/>
 
-    <BlogHighlight/>
+    <AboutInline class="!pt-0" />
 </template>

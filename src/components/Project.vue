@@ -46,9 +46,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <NuxtLink :to="url" ref="main">
+    <NuxtLink :to="url" ref="main" target="_blank">
         <div class="image" :class="`variant-${variant}`">
-            <img ref="imageRef" :src="image" alt="Project"/>
+            <img ref="imageRef" :src="image" :alt="name"/>
         </div>
         <div class="body">
             <div>

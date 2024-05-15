@@ -236,15 +236,15 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 section {
-    padding-bottom: 6rem;
+    padding: 6rem 0;
     text-align: center;
 
     @screen lg {
-        padding-bottom: 8rem;
+        padding: 8rem 0;
     }
 
     @screen xl {
-        padding-bottom: 12rem;
+        padding: 12rem 0;
     }
 
     .arrow {
