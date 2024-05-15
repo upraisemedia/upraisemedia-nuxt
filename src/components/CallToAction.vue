@@ -12,7 +12,7 @@
                 <div class="md:col-span-8 lg:col-span-6">
                     <h2>Weten wat wij voor jou kunnen betekenen?</h2>
                     <p class="mb-8">
-                        Jochem helpt je graag verder met jouw online succes! <br class="hidden xl:block"/>Neem contact met ons op voor een vrijblijvend gesprek.
+                        Jochem helpt je graag verder met jouw online succes! <br class="hidden xl:block"/>Neem contact op voor een vrijblijvend gesprek.
                     </p>
                     <UiButton to="/contact" text="Neem contact op"/>
                 </div>
