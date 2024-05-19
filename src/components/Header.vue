@@ -127,7 +127,7 @@ header {
 
         @media (hover: hover) {
             &:hover {
-                transform: scale(1.02);
+                transform: scale(1.05);
             }
         }
     }

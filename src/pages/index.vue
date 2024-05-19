@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Partner voor digitale oplossingen | Upraise Media',
+    ogTitle: 'Partner voor digitale oplossingen | Upraise Media',
+    description: 'Upraise Media is een creatief digitaal bureau dat gespecialiseerd is in webdesign, webontwikkeling en digitale marketing. Wij helpen bedrijven met het realiseren van hun online doelen.',
+    ogDescription: 'Upraise Media is een creatief digitaal bureau dat gespecialiseerd is in webdesign, webontwikkeling en digitale marketing. Wij helpen bedrijven met het realiseren van hun online doelen.',
+})
+</script>
+
 <template>
     <HeroHome/>
 

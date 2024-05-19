@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Over ons | Upraise Media',
+    ogTitle: 'Over ons | Upraise Media',
+    description: 'Upraise Media is een ervaren digitaal bureau met meer dan negen jaar expertise in de branche. Ons doel is om bedrijven te ondersteunen door het ontwikkelen van hoogwaardige websites, webshops en op maat gemaakte systemen.',
+    ogDescription: 'Upraise Media is een ervaren digitaal bureau met meer dan negen jaar expertise in de branche. Ons doel is om bedrijven te ondersteunen door het ontwikkelen van hoogwaardige websites, webshops en op maat gemaakte systemen.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>

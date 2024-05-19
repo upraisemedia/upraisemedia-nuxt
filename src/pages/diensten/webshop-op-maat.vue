@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Webshop op maat | Upraise Media',
+    ogTitle: 'Webshop op maat | Upraise Media',
+    description: 'Op maat gemaakte webhop die aansluit op de specifieke behoeften van uw bedrijf. Neem contact op met Upraise Media voor meer informatie.',
+    ogDescription: 'Op maat gemaakte webhop die aansluit op de specifieke behoeften van uw bedrijf. Neem contact op met Upraise Media voor meer informatie.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
@@ -42,5 +51,3 @@
         </div>
     </Content>
 </template>
-<script setup lang="ts">
-</script>

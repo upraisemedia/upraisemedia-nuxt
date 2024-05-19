@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Zoekmachineoptimalisatie (SEO) | Upraise Media',
+    ogTitle: 'Zoekmachineoptimalisatie (SEO) | Upraise Media',
+    description: 'Zoekmachineoptimalisatie, of SEO, is belangrijk omdat het de zichtbaarheid en bereikbaarheid van je website verbetert. Neem contact op met Upraise Media voor meer informatie.',
+    ogDescription: 'Zoekmachineoptimalisatie, of SEO, is belangrijk omdat het de zichtbaarheid en bereikbaarheid van je website verbetert. Neem contact op met Upraise Media voor meer informatie.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
@@ -38,5 +47,3 @@
         </div>
     </Content>
 </template>
-<script setup lang="ts">
-</script>

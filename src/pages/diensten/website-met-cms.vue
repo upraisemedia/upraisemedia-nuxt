@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Website met CMS | Upraise Media',
+    ogTitle: 'Website met CMS | Upraise Media',
+    description: 'Een website met een Content Management Systeem (CMS) biedt je de mogelijkheid om eenvoudig en zonder technische voorkennis de inhoud van je website te beheren en bij te werken. Neem contact op met Upraise Media voor meer informatie.',
+    ogDescription: 'Een website met een Content Management Systeem (CMS) biedt je de mogelijkheid om eenvoudig en zonder technische voorkennis de inhoud van je website te beheren en bij te werken. Neem contact op met Upraise Media voor meer informatie.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
@@ -41,5 +50,3 @@
         </div>
     </Content>
 </template>
-<script setup lang="ts">
-</script>

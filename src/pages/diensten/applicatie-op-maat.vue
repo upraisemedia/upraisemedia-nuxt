@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Maatwerk applicatie | Upraise Media',
+    ogTitle: 'Maatwerk applicatie | Upraise Media',
+    description: 'Op maat gemaakte softwareoplossingen die aansluiten op de specifieke behoeften van uw bedrijf. Neem contact op met Upraise Media voor meer informatie.',
+    ogDescription: 'Op maat gemaakte softwareoplossingen die aansluiten op de specifieke behoeften van uw bedrijf. Neem contact op met Upraise Media voor meer informatie.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
@@ -49,5 +58,3 @@
         </div>
     </Content>
 </template>
-<script setup lang="ts">
-</script>

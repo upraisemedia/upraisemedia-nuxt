@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Website op maat | Upraise Media',
+    ogTitle: 'Website op maat | Upraise Media',
+    description: 'Een website op maat stelt je in staat om een website te creëren die perfect aansluit bij de behoeften van jouw specifieke doelgroep. Neem contact op met Upraise Media voor meer informatie.',
+    ogDescription: 'Een website op maat stelt je in staat om een website te creëren die perfect aansluit bij de behoeften van jouw specifieke doelgroep. Neem contact op met Upraise Media voor meer informatie.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
@@ -48,5 +57,3 @@
         </div>
     </Content>
 </template>
-<script setup lang="ts">
-</script>

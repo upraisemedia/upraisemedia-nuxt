@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Een (digitaal) kopje koffie drinken of gewoon even babbelen? | Upraise Media',
+    ogTitle: 'Een (digitaal) kopje koffie drinken of gewoon even babbelen? | Upraise Media',
+    description: 'Neem contact op met Upraise Media voor een vrijblijvend gesprek over jouw project of idee. Wij helpen je graag verder.',
+    ogDescription: 'Neem contact op met Upraise Media voor een vrijblijvend gesprek over jouw project of idee. Wij helpen je graag verder.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>

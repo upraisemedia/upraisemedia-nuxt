@@ -1,3 +1,12 @@
+<script setup>
+useSeoMeta({
+    title: 'Wat wij doen | Upraise Media',
+    ogTitle: 'Wat wij doen | Upraise Media',
+    description: 'Bekijk hier een selectie van onze projecten en ontdek wat wij voor jou kunnen betekenen.',
+    ogDescription: 'Bekijk hier een selectie van onze projecten en ontdek wat wij voor jou kunnen betekenen.',
+})
+</script>
+
 <template>
     <HeroDefault>
         <ul>
