@@ -214,9 +214,10 @@ footer {
     }
 
     a {
+        transition: color .2s ease-in-out;
         @media (hover:hover) {
             &:hover {
-                text-decoration: underline;
+                color: var(--color-secondary);
             }
         }
     }

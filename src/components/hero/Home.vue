@@ -210,11 +210,12 @@ section {
         &.square {
             width: 6rem;
             height: 6rem;
-            background-color: var(--color-midgrey);
+            background-color: var(--color-secondary);
             right: 15%;
             top: 12%;
             transform: rotate(45deg);
             transition: all .3s;
+            opacity: 0.3;
 
             @screen xl {
                 width: 14rem;

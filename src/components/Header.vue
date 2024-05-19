@@ -51,6 +51,7 @@ function checkScroll() {
 // Watch the route.name, if it changes we change the ref
 watch(() => route.name, (name) => {
     headerInverted.value = name === 'index';
+    navigationVisible.value = false;
 });
 
 /**
@@ -62,7 +63,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <header :class="route.name === 'index' && 'invert'">
+    <header :class="[route.name === 'index' && 'invert', navigationVisible && 'navigation-active']">
         <div class="container">
             <div class="flex justify-between items-center">
                 <div class="logo">
@@ -91,9 +92,9 @@ onMounted(() => {
                         info@upraisemedia.nl
                     </NuxtLink>
                 </div>
-                <div class="hamburger">
+                <button class="hamburger" @click="navigationVisible = !navigationVisible">
                     <IconsHamburger/>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -141,7 +142,10 @@ header {
         width: 100vw;
         height: calc(100vh - 7rem);
         padding: 4rem 2rem 2rem 2rem;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all .3s;
 
         @screen lg {
             display: block;
@@ -151,6 +155,9 @@ header {
             height: auto;
             padding: 0;
             background-color: transparent;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
         }
 
         ul {
@@ -188,6 +195,12 @@ header {
                 }
             }
         }
+
+        &.is-active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     .mailto {
@@ -221,6 +234,13 @@ header {
         background-color: var(--color-white);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         height: 7rem;
+    }
+
+    &.navigation-active {
+        filter: none!important;
+        --tw-invert: none!important;
+        background-color: var(--color-white);
+        box-shadow: none!important;
     }
 }
 </style>

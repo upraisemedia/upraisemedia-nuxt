@@ -72,6 +72,7 @@ section {
         gap: 0.8rem;
         position: relative;
         z-index: 2;
+        flex-wrap: wrap;
 
         li {
             a,

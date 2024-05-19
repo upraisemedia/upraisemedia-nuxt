@@ -39,7 +39,7 @@ const props = defineProps({
     }
 
     &:after {
-        background-color: var(--color-white);
+        background-color: var(--color-secondary);
         opacity: 0;
         z-index: 3;
     }
