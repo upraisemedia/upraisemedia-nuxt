@@ -12,7 +12,7 @@ useSeoMeta({
 
     <ImageWide
         image="images/business.webp"
-        alt="Upraise Media Creative Digital Agency"
+        alt="Upraise Media Creatief Digitaal Bureau"
         below-hero
     />
 

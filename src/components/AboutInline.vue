@@ -14,7 +14,7 @@
                     <h2>Partner voor digitale oplossingen</h2>
                     <h3>Let's get in touch</h3>
                     <p class="pb-8">
-                        Wij zijn een digital agency met focus op het ontwikkelen van digitale oplossingen die jouw bedrijf naar een hoger niveau tillen. Wij helpen je met het ontwikkelen van een website, webshop of webapplicatie die aansluit bij jouw wensen en doelen. Wij zijn jouw partner voor digitale oplossingen.
+                        Wij zijn een digitaal bureau met focus op het ontwikkelen van digitale oplossingen die jouw bedrijf naar een hoger niveau tillen. Wij helpen je met het ontwikkelen van een website, webshop of webapplicatie die aansluit bij jouw wensen en doelen. Wij zijn jouw partner voor digitale oplossingen.
                     </p>
                     <UiButton to="/contact" text="Neem contact op"/>
                 </div>
