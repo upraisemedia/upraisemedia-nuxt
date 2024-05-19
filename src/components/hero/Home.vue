@@ -137,7 +137,6 @@ section {
         font-weight: var(--font-weight-bold);
         font-size: 4.5rem;
         line-height: 5.8rem;
-    }
 
         @screen md {
             font-size: 8rem;
