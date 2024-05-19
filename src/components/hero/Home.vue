@@ -86,7 +86,7 @@ onUnmounted(() => {
                 <div class="md:col-span-10">
                     <p>Partner voor digitale oplossingen</p>
                     <h1>
-                        Wij zijn jouw Cratief <span>Digitaal</span> Bureau
+                        Wij zijn jouw Creatief <span>Digitaal</span> Bureau
                         <IconsPiercedCirclesWhite/>
                     </h1>
                 </div>
