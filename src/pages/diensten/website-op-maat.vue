@@ -40,9 +40,6 @@ useSeoMeta({
                 </p>
                 <h3>Responsieve website op maat</h3>
                 <p>
-                    Een responsieve website is ontworpen om zich automatisch aan te passen aan het schermformaat en de oriëntatie van het apparaat waarmee een bezoeker de website bekijkt. Dit betekent dat of iemand nu een smartphone, tablet of desktop gebruikt, de website altijd correct wordt weergegeven. Het design, de inhoud en de navigatie van de site herschikken zichzelf om een optimale gebruikservaring te bieden, ongeacht het apparaat.
-                </p>
-                <p>
                     Het belang van een responsieve website in het digitale tijdperk kan niet worden onderschat. Met de toename van mobiel internetgebruik is het essentieel dat websites mobielvriendelijk zijn. Een responsieve website verbetert de gebruikerservaring aanzienlijk, wat cruciaal is omdat een positieve gebruikerservaring de kans vergroot dat bezoekers op de site blijven, terugkeren en uiteindelijk actie ondernemen, zoals het doen van een aankoop of het invullen van een contactformulier.
                 </p>
                 <p>
