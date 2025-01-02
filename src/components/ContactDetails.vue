@@ -223,15 +223,10 @@ onMounted(() => {
                         Kom langs voor een kopje koffie.
                     </p>
                     <NuxtLink to="https://maps.app.goo.gl/6iS4yt9DoJcUaXPE6" target="_blank">
-                        Walnootgaarde 38<br/>
-                        3436 JA Nieuwegein
+                        Schaapweide 6<br/>
+                        3437 EH Nieuwegein
                     </NuxtLink>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="maps-wrapper">
-                <div id="map"></div>
             </div>
         </div>
     </section>

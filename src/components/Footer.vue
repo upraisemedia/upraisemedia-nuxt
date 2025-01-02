@@ -28,8 +28,8 @@ const inverted = ref(false);
                     <h4>Adres</h4>
                     <p>
                         <NuxtLink to="https://maps.app.goo.gl/6iS4yt9DoJcUaXPE6" target="_blank">
-                            Walnootgaarde 38<br/>
-                            3436 JC Nieuwegein<br/>
+                            Schaapweide 6<br/>
+                            3437 EH Nieuwegein<br/>
                             Nederland<br/><br/>
                         </NuxtLink>
                         <NuxtLink to="mailto:info@upraisemedia.nl">info@upraisemedia.nl</NuxtLink>
