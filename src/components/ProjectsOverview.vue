@@ -11,12 +11,12 @@
                     variant="1"
                 />
                 <Project
-                    class="md:col-span-5"
+                    class="md:col-span-5 md:col-start-7 md:self-end"
                     name="Emile van Leenen Piano's"
                     subtitle="Realisatie website"
                     url="https://www.emilevanleenenpianos.nl"
                     image="images/projects/emilevanleenen.webp"
-                    variant="1"
+                    variant="2"
                 />
                 <Project
                     class="md:col-span-5"
