@@ -4,6 +4,22 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-y-48">
                 <Project
                     class="md:col-span-5"
+                    name="De Sjouwers"
+                    subtitle="Realisatie website"
+                    url="https://www.desjouwers.nl"
+                    image="images/projects/de-sjouwers.webp"
+                    variant="1"
+                />
+                <Project
+                    class="md:col-span-5"
+                    name="Emile van Leenen Piano's"
+                    subtitle="Realisatie website"
+                    url="https://www.emilevanleenenpianos.nl"
+                    image="images/projects/emilevanleenen.webp"
+                    variant="1"
+                />
+                <Project
+                    class="md:col-span-5"
                     name="Be Pretty Models Agency"
                     subtitle="Ontwerp & realisatie website"
                     url="https://beprettymodels.nl"
