@@ -71,7 +71,11 @@ onMounted(() => {
                         <img src="~/assets/img/logo.svg" alt="Logo Upraise Media"/>
                     </NuxtLink>
                 </div>
-                <nav :class="navigationVisible && 'is-active'" class="navigation">
+                <nav
+                    id="primary-navigation"
+                    :class="navigationVisible && 'is-active'"
+                    class="navigation"
+                >
                     <ul>
                         <li v-for="item in navigationItems" :key="item.name">
                             <NuxtLink
@@ -92,7 +96,14 @@ onMounted(() => {
                         info@upraisemedia.nl
                     </NuxtLink>
                 </div>
-                <button class="hamburger" @click="navigationVisible = !navigationVisible">
+                <button
+                    type="button"
+                    class="hamburger"
+                    aria-controls="primary-navigation"
+                    :aria-expanded="navigationVisible"
+                    :aria-label="navigationVisible ? 'Menu sluiten' : 'Menu openen'"
+                    @click="navigationVisible = !navigationVisible"
+                >
                     <IconsHamburger/>
                 </button>
             </div>
